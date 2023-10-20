@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question no2</title>
+    <style>
+        .container{
+            background-color: bisque;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        table{
+            border: 2px solid rgb(36, 34, 31);
+        }
+        table th{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Difference Between Absolute And Relative Positioning</h1>
+        <table>
+            <tr>
+                <th>Absolute Positioning</th>
+                <th>Relative Positioning</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                    <li>Elements with absolute positioning are removed from the normal document flow, which means they don't affect the position of other elements.</li>
+                    <li>The position of an element with absolute positioning is determined in relation to the nearest positioned ancestor. If there is no positioned ancestor, it's positioned relative to the initial containing block (usually the viewport).</li>
+                    <li>You can set the top, right, bottom, and left properties to specify the exact position of the element in relation to its containing element.</li>
+                    <li>Useful for creating overlays, pop-up menus, and elements that need to be precisely positioned on a page.</li>
+                    
+                    <td>
+                        <ul>
+                            <li>Elements with relative positioning are positioned relative to their normal position in the document flow. They still occupy space in the document flow, and other elements may be affected by their presence.</li>
+                            <li>
+                                You can use the top, right, bottom, and left properties to adjust the element's position from its normal position. This will move the element from its original position without affecting other elements. 
+                            </li>
+                            <li>Useful for fine-tuning the position of elements without removing them from the document flow.</li>
+                        </ul>
+                    </td>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

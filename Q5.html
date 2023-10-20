@@ -1,0 +1,57 @@
+<!-- `z-index` is a CSS property that determines the stacking order of elements in a web page. It is often used when elements overlap, and you want to control which element appears on top of the others. Elements with a higher `z-index` value appear on top of elements with lower `z-index` values. By default, all elements have a `z-index` of auto, which means they stack in the order they appear in the HTML, but you can use the `z-index` property to change this stacking order. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Example</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #55a1ff;
+    color: white;
+    text-align:start;
+    line-height: 100px;
+    position: absolute;
+}
+
+.box1 {
+    top: 60px;
+    left: 60px;
+    z-index: 2; /* This box will be on top of the others */
+}
+
+.box2 {
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+
+.box3 {
+    top: 100px;
+    left: 100px;
+    z-index: 3; /* This box will be on top of all the others */
+}
+    </style>
+</head>
+<body>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+</body>
+</html>
+
+
+<!-- In this example, we have three boxes with different `z-index` values. The boxes overlap because of their absolute positioning. Box 1 has a `z-index` of 2, Box 2 has a `z-index` of 1, and Box 3 has a `z-index` of 3. This means Box 3 will appear on top of the other two boxes because it has the highest `z-index` value. Box 1 is the next highest, and Box 2 is the lowest, so they stack accordingly.
+
+You can use `z-index` to control the stacking order of elements, ensuring that certain elements appear above or below others in the z-axis. -->
